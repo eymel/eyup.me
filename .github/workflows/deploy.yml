@@ -2,13 +2,13 @@ name: web-site-deploy
 on:
   push:
     tags:
-      - 'v*'  
+      - 'v*'
 jobs:
   build_and_publish_to_registry:
     runs-on: ubuntu-latest
     env:
       REGISTRY_PATH: ${{ secrets.REGISTRY_PATH }}
-      VERSION: ${{ github.head_ref }} 
+      VERSION: ${{ github.head_ref }}
     steps:
       - name: Login to Docker Registry
         uses: docker/login-action@v1
@@ -24,3 +24,9 @@ jobs:
         run: docker-compose -f docker-compose-production.yml build
       - name: Push All Image To Registry
         run: docker-compose -f docker-compose-production.yml push
+      - name: Discord notification
+        env:
+           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        uses: Ilshidur/action-discord@master
+        with:
+          args: 'The project {{ EVENT_PAYLOAD.repository.full_name }} has been deployed.'
