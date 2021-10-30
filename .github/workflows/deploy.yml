@@ -4,7 +4,7 @@ on:
     tags:
       - 'v*'  
 jobs:
-  test:
+  build_and_publish_to_registry:
     runs-on: ubuntu-latest
     env:
       REGISTRY_PATH: ${{ secrets.REGISTRY_PATH }}
