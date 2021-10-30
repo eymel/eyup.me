@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  web_dev:
+    image: ${REGISTRY_PATH}/eyupme:${VERSION}
+    build:
+      context: .
+      dockerfile: Dockerfile.production
+      args:
+        environment: production
+    ports:
+      - '3000:3000'
+    volumes:
+      - .:/home/node/app
+    environment:
+      CHOKIDAR_USEPOLLING: "true"
+      VIRTUAL_HOST: www.eyup.me,eyup.me
+      LETSENCRYPT_HOST: eyup.me
+      LETSENCRYPT_EMAIL: eyup.yildirin02@gmail.com
+    restart: unless-stopped
+
