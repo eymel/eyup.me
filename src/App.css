@@ -1,3 +1,38 @@
-.App {
+.App{
   text-align: center;
+}
+.circle-container {
+  position: relative;
+  width: 25em;
+  height: 25em;
+  /*2.8em = 2em*1.4 (2em = half the width of a link with img, 1.4 = sqrt(2))*/
+  border: solid 1px;
+  border-radius: 50%;
+  margin: 1.75em auto 0;
+}
+.circle-container .icon {
+  background-color: white;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 4em;
+  height: 4em;
+  margin: -2em;
+}
+.profile-container {
+  width: 100%;
+  height: 100%;
+}
+
+.circle-container img {
+  display: block;
+  width: 100%;
+}
+
+.profile-photo {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
 }
