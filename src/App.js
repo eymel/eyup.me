@@ -45,8 +45,11 @@ function App() {
 
       <div>
         <h1>Eyüp Yıldırım</h1>
-        <h6>  Full Stack Developer</h6>
-        <p>Full stack developer olarak projeler geliştirmekteyim.  </p>
+        <h4> Full Stack Developer</h4>
+        <p>
+          Back-end ve front-end teknolojileri kullanarak web ve mobil
+          uygulamalar geliştiriyorum.
+        </p>
       </div>
     </div>
   )
