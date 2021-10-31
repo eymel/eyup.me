@@ -3,12 +3,13 @@
 }
 .circle-container {
   position: relative;
-  width: 25em;
-  height: 25em;
+  width: 17.5em;
+  height: 17.5em;
   /*2.8em = 2em*1.4 (2em = half the width of a link with img, 1.4 = sqrt(2))*/
-  border: solid 1px;
+  border: solid 2px;
   border-radius: 50%;
-  margin: 1.75em auto 0;
+  margin: 2.5em auto 0;
+  margin-bottom: 40px;
 }
 .circle-container .icon {
   background-color: white;

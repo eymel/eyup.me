@@ -28,6 +28,14 @@ const socialLinks = [
   {
     url: 'https://www.linkedin.com/in/eyup-yildirim/',
     icon: LinkedinIcon
+  },
+  {
+    url: 'https://medium.com/@eymel',
+    icon: MediumIcon
+  },
+  {
+    url: 'https://www.facebook.com/eymel/',
+    icon: FacebookIcon
   }
 ]
 function App() {
@@ -35,9 +43,10 @@ function App() {
     <div className="App">
       <CircleUser profilePhoto={ProfilePhoto} socialLinks={socialLinks} />
 
-      <div styl>
+      <div>
         <h1>Eyüp Yıldırım</h1>
-        <h1>eyup.me</h1>
+        <h6>  Full Stack Developer</h6>
+        <p>Full stack developer olarak projeler geliştirmekteyim.  </p>
       </div>
     </div>
   )

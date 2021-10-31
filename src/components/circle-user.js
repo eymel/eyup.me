@@ -15,7 +15,7 @@ function CircleUser(params) {
               transform:
                 'rotate(' +
                 rotateAvg +
-                'deg) translate(12em) rotate(-' +
+                'deg) translate(9em) rotate(-' +
                 rotateAvg +
                 'deg)'
              
