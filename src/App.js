@@ -51,6 +51,9 @@ function App() {
           Back-end ve front-end teknolojileri kullanarak web ve mobil
           uygulamalar geliştiriyorum. 
         </p>
+        <p>
+          Docker, Nodejs , Dotnet ... 
+        </p>
       </div>
     </div>
   )
